@@ -1,5 +1,7 @@
-tap "homebrew/bundle"
 brew "gcc"
+brew "gh"
+brew "go"
+brew "tmux"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
