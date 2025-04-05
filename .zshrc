@@ -14,6 +14,14 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+alias g='git'
+alias gb='git branch'
+alias gs='git status'
+alias gst='git stash'
+alias gsw='git switch'
+alias gcmsg='git commit -m'
+alias gpoh='git push origin HEAD'
+alias gpfoh='git push --force-with-lease origin HEAD'
 alias sz='source ~/dotfiles/.zshrc'
 alias vz='vim ~/dotfiles/.zshrc'
 alias python='python3'
