@@ -22,6 +22,8 @@ alias gsw='git switch'
 alias gcmsg='git commit -m'
 alias gpoh='git push origin HEAD'
 alias gpfoh='git push --force-with-lease origin HEAD'
+alias grec='gh pr create'
+
 alias sz='source ~/dotfiles/.zshrc'
 alias vz='vim ~/dotfiles/.zshrc'
 alias python='python3'
