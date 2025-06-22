@@ -40,3 +40,9 @@ opt.expandtab = true
 
 -- 新しい行にしたとき自動でインデントが反映される
 opt.autoindent = true
+
+-- 24bit カラーを有効化
+vim.opt.termguicolors = true
+
+-- 背景をダークに設定
+vim.opt.background = "dark"

@@ -1,5 +1,16 @@
 autoload -Uz colors && colors
 
+# プロンプト展開を有効にする
+setopt PROMPT_SUBST
+
+# gitブランチを取得する関数
+git_branch() {
+    git branch 2>/dev/null | grep '^*' | colrm 1 2
+}
+
+# プロンプト設定
+PROMPT='%F{050}%~:%f%F{030}$(git_branch)%f $'
+
 alias g='git'
 alias gb='git branch'
 alias gs='git status'
@@ -13,5 +24,5 @@ alias grec='gh pr create'
 alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
-alias sz='source ~/dotfiles/.zshrc'
-alias vz='nvim ~/dotfiles/.zshrc'
+alias sz='source ~/dev/dotfiles/.zshrc'
+alias vz='vim ~/dev/dotfiles/.zshrc'
