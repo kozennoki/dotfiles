@@ -11,6 +11,20 @@ git_branch() {
 # プロンプト設定
 PROMPT='%F{050}%~:%f%F{030}$(git_branch)%f $'
 
+# 直前と同じコマンドはヒストリに追加しない
+setopt hist_ignore_dups
+
+# 他のzshと履歴を共有する
+setopt share_history
+
+# 即座に履歴を保存する
+setopt inc_append_history
+
+# ヒストリ設定
+export HISTFILE=~/.zsh_history
+export HISTSIZE=100000
+export SAVEHIST=100000
+
 alias g='git'
 alias gb='git branch'
 alias gs='git status'
