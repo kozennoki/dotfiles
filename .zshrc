@@ -33,7 +33,7 @@ alias gsw='git switch'
 alias gcmsg='git commit -m'
 alias gpoh='git push origin HEAD'
 alias gpfoh='git push --force-with-lease origin HEAD'
-alias grec='gh pr create'
+alias gprc='gh pr create'
 
 alias vi='nvim'
 alias vim='nvim'
