@@ -40,3 +40,8 @@ alias vim='nvim'
 alias view='nvim -R'
 alias sz='source ~/dev/dotfiles/.zshrc'
 alias vz='vim ~/dev/dotfiles/.zshrc'
+
+# devcontainerへ接続する関数
+dev() {
+  docker exec -it -u vscode -w "/workspaces/$1" "$1" /bin/bash
+}
