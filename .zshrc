@@ -25,6 +25,10 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
 
+# mise
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(mise activate zsh)"
+
 alias g='git'
 alias gb='git branch'
 alias gs='git status'
