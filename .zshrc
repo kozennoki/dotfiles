@@ -42,8 +42,9 @@ alias gprc='gh pr create'
 alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
-alias sz='source ~/dev/dotfiles/.zshrc'
-alias vz='vim ~/dev/dotfiles/.zshrc'
+# ~/.zshrc は install.sh で dotfiles へのシンボリックリンクになっているので、ホスト/コンテナ共通で使える
+alias sz='source ~/.zshrc'
+alias vz='vim ~/.zshrc'
 
 # devcontainerへ接続する関数
 dev() {
